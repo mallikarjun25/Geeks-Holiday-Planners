@@ -1,0 +1,60 @@
+.cmp-accordion .cmp-accordion__button {
+    border: none;
+    border-bottom: 2px solid #ebebeb;
+    padding: 1em;
+    cursor: pointer;
+    background: none
+}
+
+.cmp-accordion .cmp-accordion__button:focus {
+    outline: none
+}
+
+.cmp-accordion .cmp-accordion__icon {
+    float: right
+}
+
+.cmp-accordion .cmp-accordion__icon:before {
+    content: ""
+}
+
+.cmp-accordion .cmp-accordion__button--expanded {
+    border: none
+}
+
+.cmp-accordion .cmp-accordion__button--expanded .cmp-accordion__icon:before {
+    content: ""
+}
+
+.cmp-accordion .cmp-accordion__title {
+    font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1pc;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: .5em
+}
+
+.cmp-accordion .cmp-accordion__panel {
+    font-size: 14px;
+    padding-left: .5em;
+    padding-top: .5em;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn
+}
+
+.cmp-accordion .cmp-accordion__panel p {
+    font-size: 14px;
+    line-height: 1.75
+}
+
+.cmp-accordion .cmp-accordion__panel--expanded {
+    display: block
+}
+
+.cmp-accordion .cmp-accordion__panel--hidden {
+    display: none
+}

@@ -1,0 +1,15 @@
+com\geeks\core\core\models\HelloWorldModel.class
+com\geeks\core\core\servlets\SimpleServlet.class
+com\geeks\core\core\filters\package-info.class
+com\geeks\core\core\filters\LoggingFilter.class
+com\geeks\core\core\models\GetList.class
+com\geeks\core\core\schedulers\package-info.class
+com\geeks\core\core\listeners\SimpleResourceListener.class
+com\geeks\core\core\models\package-info.class
+com\geeks\core\core\schedulers\SimpleScheduledTask$Config.class
+com\geeks\core\core\models\Marketing.class
+com\geeks\core\core\servlets\package-info.class
+com\geeks\core\core\schedulers\SimpleScheduledTask.class
+com\geeks\core\core\listeners\package-info.class
+com\geeks\core\core\models\MarketingModel.class
+com\geeks\core\core\models\MarketingImpl.class

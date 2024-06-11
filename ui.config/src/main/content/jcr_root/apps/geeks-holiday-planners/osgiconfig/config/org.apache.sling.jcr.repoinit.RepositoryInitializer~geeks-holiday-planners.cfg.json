@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/geeks-holiday-planners",
+        "create path (nt:unstructured) /content/dam/geeks-holiday-planners/jcr:content",
+        "set properties on /content/dam/geeks-holiday-planners/jcr:content\n  set cq:conf{String} to /conf/geeks-holiday-planners\n  set jcr:title{String} to \"Geeks Holiday Planners\"\nend"
+    ]
+}

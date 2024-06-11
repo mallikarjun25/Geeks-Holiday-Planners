@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/geeks-holiday-planners" mode="merge"/>
+    <filter root="/content/geeks-holiday-planners" mode="merge"/>
+    <filter root="/content/dam/geeks-holiday-planners/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/geeks-holiday-planners" mode="merge"/>
+</workspaceFilter>

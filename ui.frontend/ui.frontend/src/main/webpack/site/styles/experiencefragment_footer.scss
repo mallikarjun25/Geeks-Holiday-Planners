@@ -1,0 +1,53 @@
+
+//== XF Footer style, used on page template
+
+footer.experiencefragment {
+    background-color: #42485a;
+    color: white;
+    padding: .5em 1em;
+    border-top: 1px solid $color-foreground;
+
+    a {
+        color: white;
+        font-size: 12px;
+        text-decoration: none;
+
+        @media (prefers-color-scheme: dark) {
+            color: $color-foreground-dark;
+        }
+
+        &:hover,
+        &:focus {
+            color: $color-link;
+            text-decoration: underline;
+
+            @media (prefers-color-scheme: dark) {
+                color: $color-link-dark;
+            }
+        }
+    }
+
+    //== Navigation override _navigation.scss
+    
+    /* Hightlight active navigation item */
+
+    .cmp-navigation {
+        float: left;
+    }
+    .cmp-navigation__item--active {
+    
+        .cmp-navigation__item-link {
+            text-decoration: underline;
+            background-color: unset;
+        }
+    }
+    //== Separator
+    .cmp-separator {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    .cmp-separator__horizontal-rule {
+        margin: 0;
+        border: 0;
+    }
+}

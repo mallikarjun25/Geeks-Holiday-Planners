@@ -1,0 +1,43 @@
+Manifest-Version: 1.0
+Bundle-Category: Geeks Holiday Planners
+Bundle-Description: Core bundle for Geeks Holiday Planners
+Bundle-ManifestVersion: 2
+Bundle-Name: Geeks Holiday Planners - Core
+Bundle-SymbolicName: geeks-holiday-planners.core
+Bundle-Version: 1.0.0.SNAPSHOT
+Export-Package: com.geeks.core.core.filters;version="1.0";uses:="javax
+ .servlet",com.geeks.core.core.listeners;version="1.0";uses:="org.apac
+ he.sling.api.resource.observation",com.geeks.core.core.models;version
+ ="1.0";uses:="javax.annotation,org.apache.sling.api,org.apache.sling.
+ api.resource,org.apache.sling.models.annotations,org.apache.sling.mod
+ els.annotations.injectorspecific",com.geeks.core.core.schedulers;vers
+ ion="1.0",com.geeks.core.core.servlets;version="1.0";uses:="javax.ser
+ vlet,org.apache.sling.api,org.apache.sling.api.servlets"
+Import-Package: javax.annotation;version="0.0.0",com.day.cq.wcm.api;ve
+ rsion="[1.29,2)",com.geeks.core.core.filters;version="[1.0,2)",com.ge
+ eks.core.core.listeners;version="[1.0,2)",com.geeks.core.core.schedul
+ ers;version="[1.0,2)",com.geeks.core.core.servlets;version="[1.0,2)",
+ javax.inject;version="[1.0,2)",javax.servlet;version="[3.1,4)",org.ap
+ ache.sling.api;version="[2.3,3)",org.apache.sling.api.request;version
+ ="[2.5,3)",org.apache.sling.api.resource;version="[2.13,3)",org.apach
+ e.sling.api.resource.observation;version="[1.2,2)",org.apache.sling.a
+ pi.servlets;version="[2.3,3)",org.apache.sling.models.annotations;ver
+ sion="[1.5,2)",org.apache.sling.models.annotations.injectorspecific;v
+ ersion="[1.1,2)",org.slf4j;version="[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
+ ervlet.Servlet";uses:="javax.servlet",osgi.service;objectClass:List<S
+ tring>="org.apache.sling.api.resource.observation.ResourceChangeListe
+ ner";uses:="org.apache.sling.api.resource.observation"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.geeks.core.core.filters.LoggingFilter.
+ xml,OSGI-INF/com.geeks.core.core.listeners.SimpleResourceListener.xml
+ ,OSGI-INF/com.geeks.core.core.schedulers.SimpleScheduledTask.xml,OSGI
+ -INF/com.geeks.core.core.servlets.SimpleServlet.xml
+Sling-Model-Classes: com.geeks.core.core.models.GetList,com.geeks.core
+ .core.models.HelloWorldModel,com.geeks.core.core.models.MarketingImpl
+ ,com.geeks.core.core.models.MarketingModel
+

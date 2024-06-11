@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Geeks Holiday Planners - UI config</comment>
+<entry key="cloudManagerTarget">none</entry>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="created">2022-04-27T15:39:23.872Z</entry>
+<entry key="groupId">com.geeks.core</entry>
+<entry key="name">geeks-holiday-planners.ui.config</entry>
+<entry key="description">UI config package for Geeks Holiday Planners</entry>
+<entry key="artifactId">geeks-holiday-planners.ui.config</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">container</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.geeks.core</entry>
+</properties>

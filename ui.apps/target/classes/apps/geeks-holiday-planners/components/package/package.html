@@ -1,0 +1,66 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+<table>
+
+<tr>
+<th class="dest">Destinations</th>
+</tr>
+
+<tr>
+    <td>
+<input type="checkbox" value="goa" id="goa" name="loc">Goa</input>
+</td>
+</tr>
+
+
+<tr>
+    <td>
+<input type="checkbox" value="Badrinath" id="badrinath" name="loc">Badrinath</input>
+</td>
+</tr>
+
+<tr>
+<td>
+<input type="checkbox"  value="kerla" id="kerla" name="loc">kerla</input>
+</tr>
+</tr>
+
+<tr>
+    <th class="ses">Seasons</th>
+    </tr>
+
+
+    <tr>
+        <td>
+    <input type="checkbox" id="summer">Summer</input>
+    </td>
+    </tr>
+    
+    <tr>
+        <td>
+    <input type="checkbox" id="winter">Winter</input>
+    </td>
+    </tr>
+    
+    <tr>
+    <td>
+    <input type="checkbox" id="rainy">Rainy</input>
+    </tr>
+    </tr>
+
+</table>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+
+
+
+data-sly-call="${clientLib.all @ categories='TravelPlan'}" />
+
+<h1 class="result"> </h1>
+</body>
+
+</html>

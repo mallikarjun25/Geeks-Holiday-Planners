@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 17
+Implementation-Title: Geeks Holiday Planners - UI content
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: content
+Content-Package-Id: com.geeks.core:geeks-holiday-planners.ui.content:1.0
+ .0-SNAPSHOT
+Content-Package-Description: UI content package for Geeks Holiday Planne
+ rs
+Content-Package-Dependencies: com.geeks.core:geeks-holiday-planners.ui.a
+ pps:1.0.0-SNAPSHOT
+Content-Package-Dependencies-Locations: com.geeks.core:geeks-holiday-pla
+ nners.ui.apps:1.0.0-SNAPSHOT=maven:com.geeks.core:geeks-holiday-planner
+ s.ui.apps:1.0.0-SNAPSHOT:zip
+Content-Package-Roots: /conf/geeks-holiday-planners,/content/dam/geeks-h
+ oliday-planners/asset.jpg,/content/experience-fragments/geeks-holiday-p
+ lanners,/content/geeks-holiday-planners
+

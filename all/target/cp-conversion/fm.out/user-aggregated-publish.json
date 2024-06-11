@@ -1,0 +1,81 @@
+{
+  "id":"com.geeks.core:geeks-holiday-planners.all:slingosgifeature:user-aggregated-publish:1.0.0-SNAPSHOT",
+  "bundles":[
+    {
+      "id":"com.geeks.core:geeks-holiday-planners.core:1.0.0-SNAPSHOT",
+      "feature-origins":"com.geeks.core:geeks-holiday-planners.all:slingosgifeature:1.0.0-SNAPSHOT",
+      "start-order":"20",
+      "content-package-origins":"com.geeks.core:geeks-holiday-planners.all:1.0.0-SNAPSHOT"
+    }
+  ],
+  "configurations":  {
+    "org.apache.sling.commons.log.LogManager.factory.config~geeks-holiday-planners":    {
+      ":configurator:content-package-origins":"com.geeks.core:geeks-holiday-planners.all:1.0.0-SNAPSHOT|com.geeks.core:geeks-holiday-planners.ui.config:1.0.0-SNAPSHOT",
+      "org.apache.sling.commons.log.names":[
+        "com.geeks.core"
+      ],
+      "org.apache.sling.commons.log.level":"INFO",
+      "org.apache.sling.commons.log.file":"logs/error.log",
+      "org.apache.sling.commons.log.additiv":"false",
+      ":configurator:feature-origins-org.apache.sling.commons.log.names":[
+        "com.geeks.core:geeks-holiday-planners.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins-org.apache.sling.commons.log.file":[
+        "com.geeks.core:geeks-holiday-planners.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins-org.apache.sling.commons.log.level":[
+        "com.geeks.core:geeks-holiday-planners.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins-org.apache.sling.commons.log.additiv":[
+        "com.geeks.core:geeks-holiday-planners.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins":[
+        "com.geeks.core:geeks-holiday-planners.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ]
+    }
+  },
+  "assembled-features:ARTIFACTS|TRANSIENT":[
+    "com.geeks.core:geeks-holiday-planners.all:slingosgifeature:1.0.0-SNAPSHOT"
+  ],
+  "repoinit:TEXT|true":[
+    "create path (sling:OrderedFolder) /content/dam/geeks-holiday-planners\r",
+    "create path (nt:unstructured) /content/dam/geeks-holiday-planners/jcr:content\r",
+    "set properties on /content/dam/geeks-holiday-planners/jcr:content",
+    "  set cq:conf{String} to /conf/geeks-holiday-planners",
+    "  set jcr:title{String} to \"Geeks Holiday Planners\"",
+    "end"
+  ],
+  "content-packages:ARTIFACTS|true":[
+    {
+      "id":"com.geeks.core:geeks-holiday-planners.ui.config:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+      "feature-origins":"com.geeks.core:geeks-holiday-planners.all:slingosgifeature:1.0.0-SNAPSHOT"
+    },
+    {
+      "id":"com.geeks.core:geeks-holiday-planners.ui.apps:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+      "feature-origins":"com.geeks.core:geeks-holiday-planners.all:slingosgifeature:1.0.0-SNAPSHOT"
+    },
+    {
+      "id":"com.geeks.core:geeks-holiday-planners.ui.content:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+      "feature-origins":"com.geeks.core:geeks-holiday-planners.all:slingosgifeature:1.0.0-SNAPSHOT"
+    },
+    {
+      "id":"com.geeks.core:geeks-holiday-planners.all:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+      "feature-origins":"com.geeks.core:geeks-holiday-planners.all:slingosgifeature:1.0.0-SNAPSHOT"
+    }
+  ],
+  "api-regions:JSON|false":[
+    {
+      "name":"global",
+      "exports":[
+        "com.geeks.core.core.filters",
+        "com.geeks.core.core.listeners",
+        "com.geeks.core.core.models",
+        "com.geeks.core.core.schedulers",
+        "com.geeks.core.core.servlets"
+      ],
+      "feature-origins":[
+        "com.geeks.core:geeks-holiday-planners.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ]
+    }
+  ]
+}

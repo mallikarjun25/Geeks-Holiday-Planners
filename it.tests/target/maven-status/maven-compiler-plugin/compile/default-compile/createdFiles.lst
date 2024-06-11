@@ -1,0 +1,4 @@
+com\geeks\core\it\tests\PublishPageValidationIT.class
+com\geeks\core\it\tests\CreatePageIT.class
+com\geeks\core\it\tests\GetPageIT.class
+com\geeks\core\it\tests\HtmlUnitClient.class

@@ -1,0 +1,15 @@
+<h2>Marketing List</h2>
+
+<div data-sly-use.marketing="com.geeks.core.core.models.Marketing">
+    <div data-sly-list.item="${marketing.destinationList}">
+		<p><b>Destination:</b>${item}</p>
+    </div>
+
+	<div data-sly-list.item="${marketing.travelPlan}">
+		<p><b>TravelPlan:</b>${item}</p>
+    </div>
+</div>
+
+
+
+
